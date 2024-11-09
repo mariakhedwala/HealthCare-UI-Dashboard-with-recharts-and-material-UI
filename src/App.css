@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+* {
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* dashboard css */
+.filter-section {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+.filter-section.open {
+  max-height: 500px; /* Set to a high enough value to fit the content */
+  opacity: 1;
 }
